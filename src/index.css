@@ -1,0 +1,162 @@
+@charset "utf-8";
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.headtable {
+  float: center;
+  margin: 0 auto;
+  
+  border-color: black;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    font-size: 4vw;
+}
+.headtablecontainer {
+  padding:10px;
+	height: 5vw;
+	overflow: hidden;
+	background:rgb(209, 226, 226);
+}
+.headtable th{
+	margin: 10px;
+	width: 25%;
+  
+  border: 1px solid #000;
+}
+
+/* FIRST TABLE IN LANDING PAGE */
+.welcometable{
+  float: center;
+  margin: 0 auto;
+	margin-top: 5vw;
+	width: 80%;
+  height: 30vw;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    font-size: 3;
+  border: 1px solid #000;
+}
+.welcometable th{
+	margin: 10px;
+	width: 25%;
+  text-align: left;
+  
+  vertical-align: center;
+  text-align: center;
+   vertical-align: top;
+  
+}
+
+/* HERE GOES THE SLIDER */
+
+.container-slider{
+	width: 80%;
+  max-width: 900%;
+  margin:auto; 
+  box-shadow: 0 0 0 10px #000, 0 15px 50px;
+  position: relative;
+}
+.slider{
+  display: flex;
+	height: 900%;
+  width: 900%;
+  margin-left: -100%;
+}
+.slidersection{
+	width: 100%;
+}
+.sliderimg{
+	display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sliderbtn{
+	position: absolute;
+  width: 3.5vw;
+  height:3.5vw;
+  background: rgba(255, 255,255, 0.7);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size:2.5vw;
+  text-align: center;
+  font-family: bold;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sliderbtn:hover{
+	background-color: silver;
+}
+.sliderbtnleft{
+	left: 10px;
+}
+.sliderbtnright{
+	right: 10px;
+}
+
+
+/* SERVICE TABLE IN LANDING PAGE */
+.servicetable{
+  float: center;
+  margin: 0 auto;
+	margin-top: 5vw;
+  margin-bottom: 5vw;
+	width: 80%;
+  height: 20vw;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    font-size: 3;
+  border: 1px solid #000;
+}
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+#popupBody{
+  width: 46%;
+  padding: 2%;
+  border-radius: 15px;
+  box-shadow: 0 0 5px #CCC;
+  background: #FFF;
+  position: relative;
+  transition: all 5s ease-in-out;
+  margin: 20% auto;    
+}
+#cerrar{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #F00;
+}
+
+
+  
