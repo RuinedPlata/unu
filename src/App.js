@@ -49,15 +49,15 @@ function App() {
 
 <div className="container-slider">
 
-<div id="carouselExampleControls" className="carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
-    <div className="carousel-item active" data-interval="2000">
+    <div className="carousel-item active" data-bs-interval="2000">
       <img src={a1} className="d-block w-100" alt="..." />
     </div>
-    <div className="carousel-item" data-interval="2000">
+    <div className="carousel-item" data-bs-interval="2000">
       <img src={a2} className="d-block w-100" alt="..." />
     </div>
-    <div class="carousel-item" data-interval="2000">
+    <div class="carousel-item" data-bs-interval="2000">
       <img src={a3} className="d-block w-100" alt="..." />
     </div>
   </div>
